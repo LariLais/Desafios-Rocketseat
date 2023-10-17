@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <section id="sidebar">
+      <ul class="menu-sidebar">
+        <li>
+          <a href="#">
+            <img class="hidden" src="images/logo.svg" alt="" />
+            <img id="btn-menu" src="images/menu.svg" alt="" />
+          </a>
+        </li>
+        <li id="input-search">
+          <img src="images/search.svg" alt="" />
+          <input class="hidden" type="text" placeholder="Buscar" />
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/grid.svg" alt="" />
+            <p class="hidden">Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/pet.svg" alt="" />
+            <p class="hidden">Pets</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/user.svg" alt="" />
+            <p class="hidden">Clientes</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/vet.svg" alt="vet-icon" />
+            <p class="hidden">Vets</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/settings.svg" alt="settings-icon" />
+            <p class="hidden">Ajustes</p>
+          </a>
+        </li>
+      </ul>
+      <div class="login">
+        <div class="perfil hidden">
+          <img src="images/photo.jpg" alt="foto-de-perfil" />
+          <div class="info">
+            <h3>Eleanor Pena</h3>
+            <p>Veterinária</p>
+          </div>
+        </div>
+        <img src="images/log-out.svg" alt="" />
+      </div>
+    </section>
+    <section class="content">
+      <h1>Dashboard</h1>
+    </section>
+  </body>
+</html>

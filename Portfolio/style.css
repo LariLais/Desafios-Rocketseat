@@ -1,0 +1,283 @@
+/*GERAL*/
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/*CARDS*/
+
+.cards {
+  height: 100%;
+  padding: 40px 20px 40px 40px;
+}
+
+.card {
+  background-color: var(--bg-cards);
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 3px 1px #161616;
+}
+
+.card:nth-child(1) {
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nome {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#descricao {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.card:nth-child(2) {
+  height: 348px;
+  padding: 20px 40px;
+}
+
+.lista-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  list-style-type: none;
+}
+
+.item-lista a {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.card:nth-child(3) {
+  height: 208px;
+  padding: 30px 20px 30px 20px;
+}
+
+#titulo-tecnologia {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.tecnologias li {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 700;
+  font-size: 10px;
+  width: 86px;
+  height: 24px;
+  background-color: var(--bg-techs);
+  align-items: center;
+  border-radius: 15px;
+}
+
+.card:nth-child(4) {
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+#titulo-exp,
+#titulo-edu {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.lista-exp,
+.lista-edu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.lista-exp li h3 {
+  font-size: 14px;
+}
+
+.lista-exp li p {
+  font-size: 12px;
+}
+
+.card:nth-child(5) {
+  height: 352px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.lista-edu li h3 {
+  font-size: 14px;
+}
+
+.lista-edu li p {
+  font-size: 12px;
+}
+
+.foto-de-perfil {
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+  border: 1px solid #00ff00;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+
+/*PROJECTS*/
+
+.content {
+  height: 100%;
+  padding: 40px 40px 40px 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project {
+  background-color: var(--bg-cards);
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 3px 1px #161616;
+}
+
+.project:nth-child(1) {
+  height: 86px;
+  grid-column: 2 span;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project:nth-child(2),
+.project:nth-child(3) {
+  height: 186px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.pasta {
+  display: flex;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info-rep {
+  display: flex;
+  gap: 5px;
+}
+
+/*POSTS*/
+
+.post {
+  background-color: var(--bg-cards);
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 3px 1px #161616;
+}
+
+.post:nth-child(1) {
+  height: 86px;
+  padding: 30px;
+}
+
+.post:nth-child(2) {
+  height: 201px;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.postagem {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titulo-postagem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.titulo-postagem h3 {
+  font-size: 18px;
+}
+
+.titulo-postagem p {
+  font-size: 14px;
+}
+
+.descricao-postagem {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.descricao-postagem h3 {
+  font-size: 16px;
+}
+
+.descricao-postagem ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.descricao-postagem ul li {
+  font-size: 14px;
+}

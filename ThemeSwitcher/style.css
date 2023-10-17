@@ -1,0 +1,47 @@
+:root {
+  --dark: #292c35;
+  --light: #f1f1f1;
+  --label: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.switcher {
+  position: relative;
+  width: 235px;
+  height: 102px;
+  background-color: var(--label);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switcher img {
+  width: 94px;
+  height: 94px;
+}
+
+#btn-switcher {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  left: 4%;
+  background-color: var(--light);
+  border-radius: 100%;
+  cursor: pointer;
+}

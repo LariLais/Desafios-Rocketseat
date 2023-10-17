@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Form | Rocketseat</title>
+  </head>
+  <body>
+    <header><img src="images/logo.svg" alt="logo" /></header>
+    <main>
+      <div class="back-formulario">
+        <div class="intro">
+          <h2>
+            <img src="images/log-in.svg" alt="login" />
+            Faça seu login
+          </h2>
+          <p>Entre com suas informações de cadastro.</p>
+        </div>
+
+        <form id="formulario" action="#">
+          <div class="bloco">
+            <label for="email">E-mail</label>
+            <input id="email" type="text" placeholder="Digite seu e-mail" />
+          </div>
+          <div class="bloco">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="Digite sua senha" />
+          </div>
+
+          <div class="avisos">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox">Lembre-se</label>
+            <a href="#">Esqueci minha senha</a>
+          </div>
+
+          <button id="btn-login">ENTRAR</button>
+          <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

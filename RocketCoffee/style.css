@@ -1,0 +1,328 @@
+:root {
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--backgrond);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 10% 0 20%;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(assets/rocket-coffee.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 50%;
+}
+
+#navbar li a {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+#navbar li {
+  display: flex;
+  align-items: center;
+}
+
+#navbar li a:hover {
+  text-shadow: 0px 1px 3px var(--button);
+}
+
+.back-1 {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  width: 50%;
+  z-index: -1;
+}
+
+.back-2 {
+  position: absolute;
+  height: 100%;
+  top: -20%;
+  right: 0;
+  z-index: -1;
+}
+
+#logo {
+  background-image: url(assets/logo-desktop.svg);
+  width: 43px;
+  height: 50px;
+}
+
+.logo-coffee {
+  width: 490px;
+  height: 506px;
+}
+
+#navbar {
+  display: flex;
+  gap: 35px;
+}
+
+#btn-navbar {
+  display: flex;
+  width: 172px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px solid #8257e5;
+  background: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+  height: 37px;
+}
+
+#btn-navbar:hover,
+#btn-main:hover {
+  cursor: pointer;
+  background-color: var(--button);
+  box-shadow: 0px 0px 5px 1px rgb(49, 49, 49);
+  border: 1px solid white;
+}
+
+#titulo {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -2.4px;
+  margin-top: 40px;
+}
+
+#code {
+  text-shadow: 0px 4px 4px var(--button);
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -2.4px;
+}
+
+/* Displays nones */
+
+.back-3 {
+  display: none;
+}
+
+#btn-main {
+  display: none;
+}
+
+#frase-motivacional {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menu-sidebar {
+  display: none;
+}
+
+@media (max-height: 640px) {
+  header {
+    margin-top: 10px;
+  }
+
+  nav {
+    padding: 0 80px;
+  }
+
+  #navbar li a {
+    font-size: 12px;
+  }
+
+  #titulo,
+  #code {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  #logo {
+    width: 30px;
+    height: 50px;
+  }
+
+  #btn-navbar {
+    width: 100px;
+    height: 30px;
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 428px) {
+  #navbar,
+  .back-1,
+  .back-2,
+  #btn-navbar,
+  #menu-sidebar {
+    display: none;
+  }
+
+  #navbar {
+    margin-top: 80px;
+  }
+
+  #menu {
+    display: block;
+    background-image: url(assets/menu-buguer-open.svg);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .back-3 {
+    position: absolute;
+    display: block;
+    bottom: 0;
+  }
+
+  main {
+    margin-top: 80px;
+    padding: 0 27px;
+    background-size: 100%;
+    z-index: 1;
+  }
+
+  #frase-motivacional {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+
+  header {
+    margin: 0;
+    height: 80px;
+  }
+
+  nav {
+    height: 80px;
+    padding: 45px 26px;
+    align-items: center;
+    border-bottom: 1px solid #29292e;
+  }
+
+  .nome-site {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #logo {
+    background-image: url(assets/logo-mobile.svg);
+    background-repeat: no-repeat;
+    width: 171px;
+    height: 32px;
+  }
+
+  #titulo,
+  #code {
+    font-size: 50px;
+  }
+
+  #btn-main {
+    margin-top: 88px;
+    margin-bottom: 98px;
+    display: inline-flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid #8257e5;
+    width: 50%;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #menu-sidebar {
+    width: 100%;
+    height: 40%;
+  }
+
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar li {
+    width: 100%;
+    padding: 17px 25px;
+    border: 1px solid var(--border);
+  }
+
+  #sidebar li a {
+    color: #a8a8b3;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #sidebar li:hover {
+    border-left: 5px solid var(--button);
+    padding-left: 21px;
+  }
+}
